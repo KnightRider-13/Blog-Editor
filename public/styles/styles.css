@@ -1,0 +1,184 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: #eee;
+    padding: 0 16px;
+    overflow: hidden;
+  }
+  
+  header {
+    background-color: #B3F2DD;
+    margin: auto -16px;
+    padding: 16px 32px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  }
+  
+  header h1 {
+    color: #fff;
+    font-family: "McLaren", cursive;
+    font-weight: 200;
+  }
+  
+  footer {
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+  }
+  
+  footer p {
+    color: #282828;
+  }
+  .note {
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px #282828;
+    padding: 10px;
+    width: 100%;
+    max-width: 280px;
+    margin: 16px;
+    float: left;
+    position: relative;
+    transition: all 300ms ease;
+  }
+  .note h1 {
+    font-size: 1.1em;
+    margin-bottom: 6px;
+  }
+  .note p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  .note button {
+    position: absolute;
+    right: -15px;
+    bottom: -18px;
+    margin-right: 10px;
+    background-color: #B3F2DD;
+    border: none;
+    border-radius: 50px;
+    width: 56px;
+    height: 42px;
+    cursor: pointer;
+    outline: none;
+    color: black;
+  }
+  form{
+    position: relative;
+    transition: all 300ms ease;
+  }
+  
+  .input{
+    position: relative;
+    width: 480px;
+    margin: 30px auto 20px auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+  }
+  .input input,
+  .input textarea {
+    width: 100%;
+    border: none;
+    padding: 4px;
+    outline: none;
+    font-size: 1.2em;
+    font-family: inherit;
+    resize: none;
+  }
+  form button {
+    position: absolute;
+    right: 18px;
+    bottom: -18px;
+    background: #B3F2DD;
+    color: black;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: none;
+    transition: all 300ms ease;
+  }
+  form button:hover{
+    transform: scale(1.1);
+  }
+  form button:active{
+    transform: scale(0.8);
+  }
+  .note .edit{
+    position: absolute;
+    right: 8px;
+    top: -18px;
+    width: 36px;
+    height: 32px;
+  }
+  .note .edit:hover{
+    background-color: #29E7CD;
+  }
+  .note .delete:hover{
+    color: white;
+    background-color: #C52233;
+  }
+  .hidden{
+    display: none;
+  }
+
+  .note form {
+    margin-top: 10px; /* Add space between notes */
+    position: relative;
+}
+
+.note form input[type="text"],
+.note form textarea {
+    width: 100%; /* Make input fields and textarea full width */
+    padding: 8px; /* Add padding */
+    margin-bottom: 10px; /* Add margin bottom for spacing */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+    font-size: 14px; /* Adjust font size */
+}
+
+.note form button[type="submit"] {
+    background-color: #E57373; 
+    color: white;  
+    border: none; 
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    right: 52px;
+    bottom : -26px;
+    display: flex;
+    justify-content: center;
+    width: 50px;
+    height: 36px;
+}
+
+.note form button[type="submit"]:hover {
+    background-color: #D32F2F
+}
+.editor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 350px;
+}
+.save__button{
+  position: absolute;
+  right: -5% !important;
+}
