@@ -22,7 +22,7 @@ This project is a blog editor that lets users add, edit, and delete posts using 
 ### 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/my-blogger.git
+git clone https://github.com/KnightRider-13/Blog-Editor.git
 ```
 ### 2. Install dependencies:
 ```bash
